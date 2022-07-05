@@ -1,140 +1,132 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-
-    <!-- Meta Tags -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <meta name="description" content="" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Pereira</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- HEADER -->
+      <div class="header">
+        <nav class="navbar">
+          <span class="navbar__logo">
+            <img src="./img/logo.svg" alt="Luis Pereira" />
+          </span>
+          <ul class="navbar__nav">
+            <li class="navbar__item"><img src="img/linkedin.svg" /></li>
+            <li class="navbar__item"><img src="img/github.svg" /></li>
+          </ul>
+        </nav>
 
-    <!-- Mobile Specifics -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="MobileOptimized" content="320" />
+        <h1 class="heading-primary header__title">
+          Frontend & Backend Development
+        </h1>
+      </div>
+      <!-- END OF THE HEADER -->
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Main Style -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- Responsive -->
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic'
-        rel='stylesheet' type='text/css'>
-
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="#">
-
-    <link rel="apple-touch-icon" href="#">
-    <link rel="apple-touch-icon" sizes="114x114" href="#">
-    <link rel="apple-touch-icon" sizes="72x72" href="#">
-    <link rel="apple-touch-icon" sizes="144x144" href="#">
-
-    <!-- Modernizr -->
-    <script src="assets/js/modernizr.js"></script>
-
-</head>
-
-
-<body>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="span2">
-                    <div id="logo">
-                        <a href="index.html" title="Luis Pereira">Luis Pereira</a>
-                    </div>
-                </div>
-                <!-- <div class="span10">
-        		<nav id="menu">
-                    <ul id="menu-nav">
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </nav>
-        	</div> -->
-            </div>
+      <div class="section-skills">
+        <div class="section-skills__title-container">
+          <h2 class="heading-secondary section-skills__title">
+            Skills
+            <span class="decoration"></span>
+          </h2>
         </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- Start Intro Box -->
-    <section id="intro-box" class="margin-0">
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <h4>I'm self taught a front end developer that likes coding for fun.</h4>
-                </div>
-            </div>
+        <div class="row" style="margin-bottom: 75px">
+          <div style="text-align: center" class="col-1-of-4">
+            <img
+              class="section-skills__img"
+              src="img/typescript.svg"
+              style="background-color: white"
+            />
+            <h3>TypeScript</h3>
+          </div>
+          <div style="text-align: center" class="col-1-of-4">
+            <img class="section-skills__img" src="img/javascript.svg" />
+            <h3>JavaScript</h3>
+          </div>
+          <div style="text-align: center" class="col-1-of-4">
+            <img class="section-skills__img" src="img/react.svg" />
+            <h3>React / React Native</h3>
+          </div>
+          <div style="text-align: center" class="col-1-of-4">
+            <img
+              class="section-skills__img"
+              src="img/nodejs.svg"
+              style="background-color: #dddddd"
+            />
+            <h3>NodeJS</h3>
+          </div>
         </div>
-    </section>
-    <!-- End Intro Box -->
-
-    <!-- Start Section Skills -->
-    <section class="container">
         <div class="row">
-            <h3>Skills</h3>
-            <ul>
-                <li>Javascript, Typescript, React, React Native, Node.js, express</li>
-                <li>HTML</li>
-                <li>CSS, Sass</li>
-                <li>REST API, GraphQL</li>
-                <li>MongoDB, MySQL / MariaDB</li>
-                <li>Python</li>
-                <li>MQL5</li>
-            </ul>
+          <div style="text-align: center" class="col-1-of-4">
+            <img
+              class="section-skills__img"
+              src="img/css.svg"
+              style="border-radius: 0"
+            />
+            <h3>CSS</h3>
+          </div>
+          <div style="text-align: center" class="col-1-of-4">
+            <img
+              class="section-skills__img"
+              src="img/html.svg"
+              style="border-radius: 0"
+            />
+            <h3>HTML</h3>
+          </div>
+          <div style="text-align: center" class="col-1-of-4">
+            <img class="section-skills__img" src="img/sass.svg" />
+            <h3>SASS</h3>
+          </div>
+          <div style="text-align: center" class="col-1-of-4">
+            <img
+              class="section-skills__img"
+              src="img/mongodb.svg"
+              style="background-color: #dddddd"
+            />
+            <h3>MongoDB</h3>
+          </div>
         </div>
-    </section>
-    <!-- End Section Skills -->
+      </div>
 
-    <!-- Start Section Portfolio Projects -->
-    <section class="container">
+      <div class="section-portfolio">
+        <div class="section-portfolio__title-container">
+          <h2 class="heading-secondary section-portfolio__title">
+            Portfolio
+            <span class="decoration"></span>
+          </h2>
+        </div>
+
         <div class="row">
-            <h3>My Projects</h3>
-            <ul>
-                <li>
-                    <a href="https://github.com/bioslack/wordle-pt-br">
-                        <h4>A Wordle PT-BR implementation written in Vanilla Javascript</h4>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/bioslack/digital-agency">
-                        <h4>A digital agency landing page</h4>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- End Section Portfolio Projects -->
-
-    <!-- Start Footer -->
-    <footer class="footer-widgets">
-        <div class="container">
-            <div class="row">
-                <div class="span4 widget">
-                    <div class="about-widget">
-                        <h7>pereira.luishm@gmail.com</h7>
-                    </div>
-                </div>
-                <div class="span8 widget">
-                    <div class="twitter-widget">
-                        <h7><a href="https://www.linkedin.com/in/luishenriquemp/" target="_blank">linkedin</a> &nbsp; •
-                            &nbsp; <a href="https://github.com/bioslack" target="_blank">github</a>
-                    </div>
-                </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <img class="card__img" src="./img/screenshot.png" />
+              <h3 class="card__title heading-tertiary">
+                Chessboard<span class="decoration"></span>
+              </h3>
             </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <img class="card__img" src="./img/screenshot-2.png" />
+              <h3 class="card__title heading-tertiary">
+                Wordle<span class="decoration"></span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <!-- <div class="card">
+              <div class="card__img"></div>
+              <h3 class="card__title heading-tertiary">
+                Chessboard<span class="decoration"></span>
+              </h3>
+            </div> -->
+          </div>
         </div>
-    </footer>
-    <!-- End Footer -->
-
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
