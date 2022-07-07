@@ -1,0 +1,63 @@
+.header {
+  height: 450px;
+
+  @include respond(phone) {
+    height: 350px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__title {
+    width: 420px;
+
+    @include respond(phone) {
+      width: auto;
+      text-align: center;
+    }
+  }
+}
+
+.section-skills {
+  position: relative;
+  margin-bottom: 100px;
+
+  &__title {
+    position: relative;
+    text-align: center;
+  }
+
+  &__title-container {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  &__skill-title {
+    font-size: 18px;
+    
+    @include respond(phone) {
+      font-size: 14px;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+
+    @include respond(phone) {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+.section-portfolio {
+  position: relative;
+  margin-bottom: 20px;
+
+  &__title-container {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+}

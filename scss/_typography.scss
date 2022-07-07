@@ -1,0 +1,35 @@
+.heading-primary {
+  font-size: 64px;
+
+  @include respond(phone) {
+    font-size: 36px;
+  }
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 36px;
+  line-height: calc(0.5 * 36px);
+
+  @include respond(phone) {
+    font-size: 24px;
+  }
+}
+
+.heading-tertiary {
+  display: inline-block;
+  font-size: 24px;
+  line-height: calc(0.5 * 24px);
+
+  @include respond(phone) {
+    font-size: 18px;
+  }
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--font-color);
+  text-decoration: none;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bioslack.github.io",
+  "version": "2.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bioslack/bioslack.github.io.git",
+  "author": "Luis Pereira <46751311+bioslack@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "sass" : "sass -w ./scss/main.scss:./css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}

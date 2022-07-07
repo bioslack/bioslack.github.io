@@ -1,0 +1,75 @@
+.navbar {
+  position: relative;
+  margin-bottom: 70px;
+  text-align: center;
+
+  @include clearfix;
+
+  &__nav {
+    list-style-type: none;
+    float: right;
+    transform-origin: 50% 100%;
+    transform: translateY(75%);
+
+    @include respond(phone) {
+      transform: translateY(25%);
+
+    }
+  }
+
+  &__logo {
+    float: left;
+
+    & > img {
+        width: 70px;
+        height: 70px;
+
+        @include respond(phone) {
+          width: 45px;
+          height: 45px;
+
+        }
+    }
+  }
+
+  &__item {
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.card {
+  width: 100%;
+  cursor: pointer;
+  border: 10px solid transparent;
+  padding: 20px;
+
+  &__title {
+    text-align: left;
+  }
+
+  &:hover {
+    border: 10px solid $font-color;
+  }
+
+  & > &__title > .decoration {
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    transform-origin: 0 50%;
+  }
+
+  &:hover > &__title > .decoration {
+    transform: scaleX(1);
+  }
+
+  &__img {
+    background-color: #585858;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+    object-fit: cover;
+  }
+}

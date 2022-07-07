@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luis Pereira</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="main">
@@ -15,13 +15,22 @@
           <span class="navbar__logo">
             <img src="./img/logo.svg" alt="Luis Pereira" />
           </span>
+
+          <h3 class="heading-tertiary" style="transform: translateY(75%)">
+            Luis Pereira <span class="decoration"></span>
+          </h3>
+
           <ul class="navbar__nav">
             <li class="navbar__item">
               <a href="https://www.linkedin.com/in/luishenriquemp"
                 ><img src="img/linkedin.svg"
               /></a>
             </li>
-            <li class="navbar__item"><a href="https://github.com/bioslack"><img src="img/github.svg" /></a></li>
+            <li class="navbar__item">
+              <a href="https://github.com/bioslack"
+                ><img src="img/github.svg"
+              /></a>
+            </li>
           </ul>
         </nav>
 
@@ -31,6 +40,7 @@
       </div>
       <!-- END OF THE HEADER -->
 
+      <!-- SKILLS -->
       <div class="section-skills">
         <div class="section-skills__title-container">
           <h2 class="heading-secondary section-skills__title">
@@ -38,60 +48,60 @@
             <span class="decoration"></span>
           </h2>
         </div>
-        <div class="row" style="margin-bottom: 75px">
-          <div style="text-align: center" class="col-1-of-4">
+        <div class="row">
+          <div style="text-align: center" class="col-phone-2-1 col-land-2-1 col-desktop-4-1">
             <img
               class="section-skills__img"
               src="img/typescript.svg"
               style="background-color: white"
             />
-            <h3>TypeScript</h3>
+            <h3 class="section-skills__skill-title">TypeScript</h3>
           </div>
-          <div style="text-align: center" class="col-1-of-4">
+          <div style="text-align: center" class="col-phone-2-1 col-land-2-1 col-desktop-4-1">
             <img class="section-skills__img" src="img/javascript.svg" />
-            <h3>JavaScript</h3>
+            <h3 class="section-skills__skill-title">JavaScript</h3>
           </div>
-          <div style="text-align: center" class="col-1-of-4">
+          <div style="text-align: center" class="col-phone-2-1 col-land-2-1 col-desktop-4-1">
             <img class="section-skills__img" src="img/react.svg" />
-            <h3>React / React Native</h3>
+            <h3 class="section-skills__skill-title">React / React Native</h3>
           </div>
-          <div style="text-align: center" class="col-1-of-4">
+          <div style="text-align: center" class="col-phone-2-1 col-land-2-1 col-desktop-4-1">
             <img
               class="section-skills__img"
               src="img/nodejs.svg"
               style="background-color: #dddddd"
             />
-            <h3>NodeJS</h3>
+            <h3 class="section-skills__skill-title">NodeJS</h3>
           </div>
         </div>
         <div class="row">
-          <div style="text-align: center" class="col-1-of-4">
+          <div style="text-align: center" class="col-desktop-4-1 col-phone-2-1 col-land-2-1">
             <img
               class="section-skills__img"
               src="img/css.svg"
               style="border-radius: 0"
             />
-            <h3>CSS</h3>
+            <h3 class="section-skills__skill-title">CSS</h3>
           </div>
-          <div style="text-align: center" class="col-1-of-4">
+          <div style="text-align: center" class="col-desktop-4-1 col-phone-2-1 col-land-2-1">
             <img
               class="section-skills__img"
               src="img/html.svg"
               style="border-radius: 0"
             />
-            <h3>HTML</h3>
+            <h3 class="section-skills__skill-title">HTML</h3>
           </div>
-          <div style="text-align: center" class="col-1-of-4">
+          <div style="text-align: center" class="col-desktop-4-1 col-phone-2-1 col-land-2-1">
             <img class="section-skills__img" src="img/sass.svg" />
-            <h3>SASS</h3>
+            <h3 class="section-skills__skill-title">SASS</h3>
           </div>
-          <div style="text-align: center" class="col-1-of-4">
+          <div style="text-align: center" class="col-desktop-4-1 col-phone-2-1 col-land-2-1">
             <img
               class="section-skills__img"
               src="img/mongodb.svg"
               style="background-color: #dddddd"
             />
-            <h3>MongoDB</h3>
+            <h3 class="section-skills__skill-title">MongoDB</h3>
           </div>
         </div>
       </div>
@@ -105,7 +115,7 @@
         </div>
 
         <div class="row">
-          <div class="col-1-of-3">
+          <div class="col-phone-1 col-port-1 col-land-2-1 col-desktop-2-1">
             <a href="http://chessboard-js.herokuapp.com/" target="_blank">
               <div class="card">
                 <img class="card__img" src="./img/screenshot.png" />
@@ -114,7 +124,7 @@
                 </h3></div
             ></a>
           </div>
-          <div class="col-1-of-3">
+          <div class="col-phone-1 col-port-1 col-land-2-1 col-desktop-2-1">
             <a href="http://wordle-pt.herokuapp.com/" target="_blank">
               <div class="card">
                 <img class="card__img" src="./img/screenshot-2.png" />
@@ -122,14 +132,6 @@
                   Wordle<span class="decoration"></span>
                 </h3></div
             ></a>
-          </div>
-          <div class="col-1-of-3">
-            <!-- <div class="card">
-              <div class="card__img"></div>
-              <h3 class="card__title heading-tertiary">
-                Chessboard<span class="decoration"></span>
-              </h3>
-            </div> -->
           </div>
         </div>
       </div>
